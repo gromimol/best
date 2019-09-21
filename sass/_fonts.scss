@@ -1,13 +1,37 @@
 @font-face {
-	font-family: "PTSans";
-	src: url("../font/PTSansRegular.woff") format("woff");
+	font-family: "Montserrat";
+	src: url("../font/Montserrat-Black.woff") format("woff");
+	font-style: normal;
+	font-weight: 900;
+}
+@font-face {
+	font-family: "Montserrat";
+	src: url("../font/Montserrat-ExtraBold.woff") format("woff");
+	font-style: normal;
+	font-weight: 800;
+}
+@font-face {
+	font-family: "Montserrat";
+	src: url("../font/Montserrat-Black.woff") format("woff");
+	font-style: normal;
+	font-weight: 700;
+}
+@font-face {
+	font-family: "Montserrat";
+	src: url("../font/Montserrat-Medium.woff") format("woff");
+	font-style: normal;
+	font-weight: 500;
+}
+@font-face {
+	font-family: "Montserrat";
+	src: url("../font/Montserrat-Regular.woff") format("woff");
 	font-style: normal;
 	font-weight: 400;
 }
 @font-face {
-	font-family: "PTSans";
-	src: url("../font/PTSansBold.woff") format("woff");
+	font-family: "Montserrat";
+	src: url("../font/Montserrat-Thin.woff") format("woff");
 	font-style: normal;
-	font-weight: 700;
+	font-weight: 300;
 }
 

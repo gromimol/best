@@ -1,28 +1,38 @@
 :root{
+	--pink: #b81678;
+	--red: #e00044;
+	--blue: #0169dd;
+	--yellow: #f9c407;
+	--black: #021627;
+	--green: #41ebd4;
+	--grey: #e5e5e5;
 }
 html, body{
 	min-height: 100%;
 }
 html{
-	font-size: 10px;
+	font-size: 16px;
 }
 body{
+	font-family: "Montserrat", sans-serif;
+	background-color: #fff;
 }
 a{
+	color: #000;
 	transition: all .2s;
 }
 .wrapper{
-	height: 100%;
-	display: flex;
-	flex-direction: column;
+	overflow-x: hidden;
 }
 .container{
+	width: 100%;
+	max-width: 1500px;
+	padding: 0 20px;
+	margin: 0 auto;
 }
 .main{
-	flex: 1 0 auto;
 }
 .footer{
-	flex: 0 0 auto;
 }
 .flex{
 	display: -webkit-flex;
@@ -50,8 +60,77 @@ a{
 		-ms-flex-pack: justify;
 		justify-content: space-between;
 	}
+	&--column{
+		flex-direction: column;
+	}
 
 }
+
+.btn{
+	font-size: 1.125em;
+	border-radius: 35px;
+	padding: 1.388em 2.222em;
+	&--pink{
+		background: var(--pink);
+		box-shadow: 0 26px 51px rgba(184, 22, 120, 0.75);
+		color: #fff;
+		&:hover{
+			transform: translateY(-3px);
+			box-shadow: 0 20px 31px rgba(184, 22, 120, 0.85);
+		}
+		&:active{
+			transform: translateY(0);
+			box-shadow: 0 10px 31px rgba(184, 22, 120, 0.85);
+		}
+	}
+}
+
+.pink{
+	color: var(--pink);
+}
+.yellow{
+	color: var(--yellow);
+}
+.blue{
+	color: var(--blue);
+}
+.black{
+	color: var(--black);
+}
+.red{
+	color: var(--red);
+}
+
+.title{
+	h2{
+		font-size: 4.375rem;
+		font-weight: 700;
+		padding: 2em 0 2em .75em;
+		position: relative;
+		&::before{
+			content: '';
+			width: 5.6142em;
+			height: 4.6571em;
+			background:transparent url('../img/green-shape.png') left top no-repeat;
+			background-size: contain;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		.title__text{
+			position: relative;
+			z-index: 2;
+		}
+		.white{
+			color: #fff;
+			padding-right: .2em;
+		}
+	}
+}
+
+
+
 
 ::-webkit-input-placeholder {  }
 ::-moz-placeholder          {  } /* Firefox 19+ */

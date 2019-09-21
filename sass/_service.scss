@@ -1,0 +1,50 @@
+/*service*/ 
+.service{
+	padding-top: 8.75em;
+	position: relative;
+	.title{
+		h2{
+			&::before{
+				background-image: url('../img/green-shape_opacity.png');
+			}
+		}
+	}
+}
+.service-img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 60em;
+	z-index: -1;
+}
+.service-list{
+	margin: 0 -5em;
+	li{
+		width: 33.3333%;
+		padding: 0 5em;
+		margin-bottom: 2em;
+	}
+}
+.service__img{
+	height: 25em;
+	margin-bottom: 1.25em;
+	display: flex;
+	align-items: flex-end;
+	img{
+		width: 100%;
+		height: 100%;
+		object-fit: contain;
+	}
+}
+.service__descr{
+	text-align: center;
+	h3{
+		
+		font-size: 1.75em;
+		font-weight: 700;
+		margin-bottom: .5em;
+	}
+	p{
+		line-height: 1.3;
+	}
+}

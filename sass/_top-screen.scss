@@ -1,0 +1,30 @@
+/*top-screen*/ 
+.top-screen{
+	position: relative;
+	padding: 9.375em 0 12.5em;
+}
+.top-screen-img{
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 81.25em;
+}
+.top-screen__title{
+	h1{
+		font-size: 7.5rem;
+		font-weight: 700;
+		line-height: .85;
+		margin-bottom: .3em;
+		span{
+			display: block;
+			&:first-letter{
+				color: var(--pink);
+			}
+		}
+	}
+	p{
+		font-size: 1.25em;
+		line-height: 1.65;
+		max-width: 40em;
+	}
+}

@@ -1,1 +1,98 @@
 /*Header*/ 
+.header{
+	width: 100%;
+	max-width: 1640px;
+	padding: 40px 20px 60px;
+	margin: 0 auto;
+}
+.logo{
+	img{
+		width: 7.5em;
+	}
+}
+.header-nav{
+	justify-content: flex-end;
+}
+.header__phones{
+	justify-content: flex-end;
+	margin-bottom: 2em;
+	a{
+		display: inline-block;
+		text-decoration: underline;
+		font-size: .9375em;
+		letter-spacing: 0.38px;
+		&:not(:first-child){
+			margin-left: 3em;
+		}
+		&:hover{
+			color: var(--pink);
+			text-decoration: none;
+		}
+	}
+}
+
+.menu{
+	margin-right: 3em;
+	li{
+		font-size: .9375em;
+		letter-spacing: 0.75px;
+		a{
+			display: block;
+			padding: 1em 3em;
+			border-radius: 30px;
+			&:hover{
+				background-color: var(--pink);
+				color: #fff;
+				box-shadow: 0 20px 31px rgba(184, 22, 120, 0.55);
+			}
+			&:active{
+				box-shadow: 0 10px 31px rgba(184, 22, 120, 0.75);
+			}
+		}
+	}
+}
+.mobile-btn{
+	width: 25px;
+	display: none;
+	span{
+		display: block;
+		height: 2px;
+		background-color: var(--pink);
+		border-radius: 5px;
+		&:not(:last-child){
+			margin-bottom: 5px;
+		}
+		&:nth-child(2){
+			width: 75%;
+			background-color: var(--yellow);
+		}
+	}
+}
+.close{
+	width: 30px;
+	height: 30px;
+	background: url('../img/icons/close.png') 0 0 no-repeat;
+	background-size: contain;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	z-index: 2;
+}
+.mobile-menu{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: #fff;
+	padding-top: 40px;
+	transform: translateX(-110%);
+	visibility: hidden;
+	transition: transform .1s;
+	z-index: 10;
+	&.active{
+		visibility: visible;
+		transform: translateX(0);
+	}
+}
