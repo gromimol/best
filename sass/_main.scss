@@ -2,6 +2,7 @@
 	--pink: #b81678;
 	--red: #e00044;
 	--blue: #0169dd;
+	--birusa: #43999c;
 	--yellow: #f9c407;
 	--black: #021627;
 	--green: #41ebd4;
@@ -16,6 +17,9 @@ html{
 body{
 	font-family: "Montserrat", sans-serif;
 	background-color: #fff;
+}
+img{
+	max-width: 100%;
 }
 a{
 	color: #000;
@@ -125,6 +129,15 @@ a{
 		.white{
 			color: #fff;
 			padding-right: .2em;
+		}
+	}
+	&--right{
+		display: flex;
+		justify-content: flex-end;
+		h2{
+			&::before{
+				background-image: url('../img/red-shape_title.png');
+			}
 		}
 	}
 }

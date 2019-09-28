@@ -1,0 +1,154 @@
+/*features*/ 
+.features{
+	margin-top: -5em;
+	padding: 7.5em 0 12.5em;
+	position: relative;
+	&::before,
+	&::after{
+		content: '';
+		width: 60%;
+		height: 30%;
+		background:transparent url('../img/dots-right.png') left top no-repeat;
+		background-size: contain;
+		position: absolute;
+	}
+	&::before{
+		left: 0;
+		top: 12em;
+	}
+	&::after{
+		right: 0;
+		bottom: 3em;
+		background-position: 100% 0;
+	}
+	.container{
+		position: relative;
+		z-index: 2;
+	}
+	.mark{
+		position: absolute;
+		left: 3em;
+		top: 8em;
+		width: 25em;
+	}
+	
+}
+.text-center{
+	text-align: center;
+}
+.btn-container{
+	margin-top: 6.25em;
+}
+.features-shape{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 75em;
+	max-width: 45%
+}
+.features__list{
+	margin: 0 -1em;
+	li{
+		width: 25%;
+		padding: 0 1em;
+		margin-bottom: 6em;
+	}
+}
+.features__item {
+	position: relative;
+	font-size: 1rem;
+	&::before{
+		content: '';
+		width: 20.375em;
+		height: 24.5625em;
+		background-repeat: no-repeat;
+		background-position: 0 0;
+		background-size: contain;
+		position: absolute;
+		top: 12em;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+	&--yellow{
+		&::before{
+			background-image: url('../img/yellow-shape.png');
+		}
+		.features__content{
+			h3{
+				color: var(--yellow);
+			}
+		}
+	}
+	&--birusa{
+		&::before{
+			background-image: url('../img/birusa-shape.png');
+		}
+		.features__content{
+			h3{
+				color: var(--birusa);
+			}
+		}
+	}
+	&--black{
+		&::before{
+			background-image: url('../img/black-shape.png');
+		}
+		.features__content{
+			h3{
+				color: var(--black);
+			}
+		}
+	}
+	&--red{
+		&::before{
+			background-image: url('../img/red-shape.png');
+		}
+		.features__content{
+			h3{
+				color: var(--pink);
+			}
+		}
+	}
+}
+.features__img{
+	height: 18.75em;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	margin-bottom: 3em;
+	position: relative;
+	z-index: 2;
+	img{
+	}
+}
+.features__content{
+	text-align: center;
+	position: relative;
+	z-index: 2;
+	h3{
+		font-size: 1.3em;
+		text-transform: uppercase;
+		line-height: 1.2;
+		font-weight: 700;
+		margin-bottom: 1em;
+	}
+	p{
+		font-size: 1rem;
+		line-height: 1.2;
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
