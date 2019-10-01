@@ -1,0 +1,33 @@
+/*clients*/ 
+.clients{
+	padding: 7.5em 0;
+	position: relative;
+	.container{
+		position: relative;
+		z-index: 2;
+	}
+}
+.client-bg{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 17em;
+}
+.clients__title{
+	font-size: 4.375em;
+	color: #e5e5e5;
+	font-weight: 700;
+	margin-bottom: .5em;
+}
+.clients__list{
+	align-items: center;
+	margin: 0 -2.5em;
+	li{
+		width: 16.666%;
+		padding: 0 2.5em;
+		margin-bottom: 2.5em;
+		img{
+			max-width: 100%;
+		}
+	}
+}

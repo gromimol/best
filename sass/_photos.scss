@@ -1,0 +1,29 @@
+/*photos*/ 
+.photos{
+	margin-bottom: 3em;
+}
+.photos__title{
+	font-size: 4.375rem;
+	font-weight: 700;
+	color: #e5e5e5;
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: .5em;
+}
+.photos__row,
+.photos__row--reverse{
+	margin-bottom: 2.5em;
+}
+.photos__item{
+	padding: 0 1.25em;
+	width: 28.75em;
+	height: 26.25em;
+	img{
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+.slick-slide{
+	outline: none;
+}

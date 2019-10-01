@@ -1,0 +1,140 @@
+/*reviews*/ 
+.reviews{
+	background:#fff url('../img/review_bg.jpg') 100% 100% no-repeat;
+	background-size: contain;
+	padding-top: 6em;
+	padding-bottom: 9.375em;
+	.title{
+		margin-bottom: 3em;
+	}
+	.btn-container{
+		margin-top: 2em;
+		padding-left: 7em;
+	}
+	.btn{
+		
+	}
+}
+.slick-dotted.slick-slider{
+	margin-bottom: 60px;
+}
+.reviews-slider{
+	max-width: 1450px;
+	margin: 0 auto 60px;
+	.slick-dots{
+		bottom: -10px;
+	}
+	.slick-arrow{
+		color: #000;
+		width: 6.25em;
+		height: 6.25em;
+		border-radius: 50%;
+		background-color: transparent;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 50%;
+		cursor: pointer;
+		z-index: 2;
+		transition: all .3s;
+		&:hover{
+			color: #fff;
+			background-color: #000;
+		}
+	}
+	.prev-arrow{
+		left: 0;
+		transform: translate(-200%, -50%);
+	}
+	.next-arrow{
+		right: 0;
+		transform: translate(200%, -50%);
+	}
+}
+.reviews-slider__avatar{
+	flex: none;
+	width: 21.875em;
+	height: 21.875em;
+	border-radius: 50%;
+	line-height: 0;
+	padding: 1.25em;
+	background-color: var(--green);
+	position: relative;
+	
+	img{
+		border-radius: 50%;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+}
+.reviews-slider__text{
+	position: relative;
+	font-size: 1.25rem;
+	flex-grow: 1;
+	padding-left: 6em;
+	padding-top: 1.5em;
+	line-height: 1.6;
+	&::before{
+		content: '';
+		width: 5em;
+		height: 5em;
+		background:transparent url('../img/icons/quote.svg') left top no-repeat;
+		background-size: contain;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	p{
+		margin-bottom: 2.5em;
+	}
+}
+.author-name{
+	font-weight: 700;
+	font-size: 1.1rem;
+	margin-bottom: 2em;
+	padding-left: 6.5em;
+}
+.reviews-slider__descr{
+	position: relative;
+	.social{
+		padding-left: 6.4em;
+		position: relative;
+	}
+}
+.social{
+	display: flex;
+	align-items: center;
+	li{
+		padding: 0 .8em;
+		img{
+			transition: all .3s;
+		}
+		a{
+			&:hover img{
+				opacity: .5;
+			}
+		}
+	}
+}
+.slick-dots li,
+.slick-dots li button{
+	width: 10px;
+	height: 2px;
+	padding: 0;
+}
+.slick-dots li{
+	background-color: #c2bfbf;
+	&.slick-active{
+		background-color: #fe0123;
+	}
+}
+.slick-dots li button:before{
+	display: none;
+}
+
+
+
+
+
