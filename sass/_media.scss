@@ -65,7 +65,7 @@
 		}
 	}
 	.reviews-slider .slick-arrow{
-		display: none !important; 
+		top: 100%; 
 	}
 	.reviews-slider__text{
 		font-size: 1.6rem;
@@ -183,6 +183,39 @@
 	.footer__phone{
 		margin-bottom: 15px;
 		width: 100%;
+	}
+	.form .input-wrapper{
+		margin-bottom: 30px;
+	}
+	.popup{
+		background:#fff;
+		width: 90%;
+		max-width: 550px;
+		border-radius: 30px;
+		height: auto;
+		max-height: 90vh;
+		overflow-y: auto;
+	}
+	.popup__content{
+		width: 90%;
+		padding: 20px 0;
+	}
+	.popup-close{
+		left: auto;
+		right: 20px;
+		top: 20px;
+		width: 20px;
+		height: 20px;
+	}
+	.popup__top__title__name{
+		font-size: 18px;
+	}
+	.popup__top__title__descr{
+		font-size: 15px;
+	}
+	.popup__text{
+		font-size: 13px;
+		margin-bottom: 30px;
 	}
 }
 /*768*/ 
@@ -374,5 +407,8 @@
 		p{
 			font-size: 3rem;
 		}
+	}
+	.popup__top__title__descr{
+		font-size: 12px;
 	}
 }
